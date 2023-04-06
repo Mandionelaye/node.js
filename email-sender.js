@@ -12,7 +12,8 @@ const mailOptions = {
   from: 'votre_email@gmail.com',
   to: 'email_destinataire@example.com',
   subject: 'Email de test',
-  text: 'Ceci est un e-mail de test envoyé en utilisant nodemailer.'
+  text: 'Ceci est un e-mail de test envoyé en utilisant nodemailer.',
+  html:"<p>cordialement</p>",
 };
 
 transporter.sendMail(mailOptions, function(error, info){
